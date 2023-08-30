@@ -62,5 +62,9 @@ ThemeData scitTheme() {
       ),
       tabBarTheme: const TabBarTheme(
         labelColor: purplePrimary,
+        indicatorColor: purplePrimary,
+        indicator: UnderlineTabIndicator(
+          borderSide: BorderSide(color: purplePrimary, width: 2.0),
+        ),
       ));
 }
