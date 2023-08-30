@@ -76,15 +76,15 @@ class _LoginState extends State<Login> {
               ),
               ButtonBar(
                 alignment: MainAxisAlignment.center,
-                children: <Widget>[
+                children: [
                   ElevatedButton(
                     onPressed: () {
-                      Navigator.push(
+                      Navigator.pushNamed(
                         context,
-                        MaterialPageRoute(
-                          builder: (context) => const News(),
-                          // MainNews(),
-                        ),
+                        '/news',
+                        arguments: {
+                          'user': user.text,
+                        },
                       );
                     },
                     style: ButtonStyle(

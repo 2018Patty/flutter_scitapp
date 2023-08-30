@@ -14,6 +14,7 @@ class News extends StatefulWidget {
 class _NewsState extends State<News> {
   @override
   Widget build(BuildContext context) {
+    final Map data = ModalRoute.of(context)!.settings.arguments as Map;
     return DefaultTabController(
       length: 3,
       child: Scaffold(
@@ -31,7 +32,7 @@ class _NewsState extends State<News> {
           titleTextStyle: Theme.of(context).textTheme.headlineSmall,
           elevation: 0,
           title: Text(
-            'Home',
+            'Home : ${data['user']}',
             style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                   color: purplePrimary,
                 ),

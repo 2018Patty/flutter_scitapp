@@ -104,11 +104,9 @@ class _RegisterState extends State<Register> {
                         ),
                         ElevatedButton(
                           onPressed: () {
-                            Navigator.push(
+                            Navigator.pushNamed(
                               context,
-                              MaterialPageRoute(
-                                builder: (context) => const Login(),
-                              ),
+                              '/login',
                             );
                           },
                           child: const Text('Login'),
