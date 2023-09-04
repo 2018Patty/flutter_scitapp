@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:themedemo66/color.dart';
-import 'package:themedemo66/pages/hello.dart';
-import 'package:themedemo66/pages/news.dart';
+// import 'package:themedemo66/pages/hello.dart';
+// import 'package:themedemo66/pages/news.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
@@ -63,6 +63,7 @@ class _LoginState extends State<Login> {
               ),
               TextFormField(
                 controller: password,
+                obscureText: true,
                 decoration: InputDecoration(
                   hintText: "Enter password",
                   filled: true,

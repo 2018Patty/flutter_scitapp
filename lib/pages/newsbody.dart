@@ -46,7 +46,7 @@ class _NewsBodyState extends State<NewsBody> {
       ),
       height: 300,
       child: ListView.builder(
-          itemCount: 4,
+          itemCount: 3,
           itemBuilder: (context, index) {
             return const NewsLine();
           }),

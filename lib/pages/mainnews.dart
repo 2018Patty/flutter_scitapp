@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:themedemo66/pages/appbarmain.dart';
+import 'package:themedemo66/pages/maindrawer.dart';
 
 class MainNews extends StatefulWidget {
   const MainNews({Key? key}) : super(key: key);
@@ -13,7 +15,9 @@ class _MainNewsState extends State<MainNews> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBarMain(),
       body: buildSingleChildScrollView(context),
+      drawer: MainDrawer(),
     );
   }
 

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:themedemo66/pages/hello.dart';
 import 'package:themedemo66/pages/login.dart';
+import 'package:themedemo66/pages/mainnews.dart';
 import 'package:themedemo66/pages/news.dart';
 import 'package:themedemo66/pages/newsbody.dart';
 import 'package:themedemo66/pages/register.dart';
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
         '/register': (context) => Register(),
         '/login': (context) => Login(),
         '/news': (context) => News(),
+        '/mainnews': (context) => MainNews(),
       },
     );
   }
