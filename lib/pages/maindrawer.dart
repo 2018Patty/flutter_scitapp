@@ -5,24 +5,39 @@ import 'package:themedemo66/pages/listtilemenu.dart';
 class MainDrawer extends StatelessWidget {
   const MainDrawer({
     super.key,
+    required this.data,
   });
-
+  final Map data;
   @override
   Widget build(BuildContext context) {
     return Drawer(
       child: ListView(
-        children: const [
+        children: [
           DrawHeader(),
           ListTileMenu(
-              icon: Icons.home, menuName: 'Home', routeName: '/mainnews'),
+            icon: Icons.home,
+            menuName: 'Home',
+            routeName: '/mainnews',
+            data: data,
+          ),
           ListTileMenu(
-              icon: Icons.newspaper, menuName: 'News', routeName: '/news'),
+            icon: Icons.newspaper,
+            menuName: 'News',
+            routeName: '/news',
+            data: data,
+          ),
           ListTileMenu(
-              icon: Icons.school,
-              menuName: 'Cirriculum',
-              routeName: '/register'),
+            icon: Icons.school,
+            menuName: 'Cirriculum',
+            routeName: '/register',
+            data: data,
+          ),
           ListTileMenu(
-              icon: Icons.phone, menuName: 'Contact', routeName: '/login'),
+            icon: Icons.phone,
+            menuName: 'Contact',
+            routeName: '/login',
+            data: data,
+          ),
         ],
       ),
     );

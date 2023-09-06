@@ -4,10 +4,10 @@ import 'package:themedemo66/color.dart';
 class AppBarMain extends StatefulWidget implements PreferredSizeWidget {
   const AppBarMain({
     super.key,
-    // required this.data,
+    required this.data,
   });
 
-  // final Map data;
+  final Map data;
 
   @override
   State<AppBarMain> createState() => _AppBarMainState();
@@ -33,7 +33,7 @@ class _AppBarMainState extends State<AppBarMain> {
       titleTextStyle: Theme.of(context).textTheme.headlineSmall,
       elevation: 0,
       title: Text(
-        'Home', // : ${widget.data['user']}',
+        'Home  : ${widget.data['user']}',
         style: Theme.of(context).textTheme.headlineSmall?.copyWith(
               color: purplePrimary,
             ),

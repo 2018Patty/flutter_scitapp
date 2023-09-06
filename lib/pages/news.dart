@@ -23,9 +23,9 @@ class _NewsState extends State<News> {
       length: 3,
       child: Scaffold(
         backgroundColor: Theme.of(context).colorScheme.background,
-        appBar: AppBarMain(),
+        appBar: AppBarMain(data: data),
         bottomNavigationBar: buildTabBar(),
-        drawer: MainDrawer(),
+        drawer: MainDrawer(data: data),
         body: TabBarView(
           children: const [
             NewsBody(),

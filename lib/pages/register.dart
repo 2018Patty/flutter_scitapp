@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:themedemo66/color.dart';
-import 'package:themedemo66/pages/login.dart';
+// import 'package:themedemo66/pages/login.dart';
 
 class Register extends StatefulWidget {
   const Register({super.key});

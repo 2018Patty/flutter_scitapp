@@ -14,10 +14,11 @@ class _MainNewsState extends State<MainNews> {
 
   @override
   Widget build(BuildContext context) {
+    final Map data = ModalRoute.of(context)!.settings.arguments as Map;
     return Scaffold(
-      appBar: AppBarMain(),
+      appBar: AppBarMain(data: data),
       body: buildSingleChildScrollView(context),
-      drawer: MainDrawer(),
+      drawer: MainDrawer(data: data),
     );
   }
 

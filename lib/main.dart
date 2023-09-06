@@ -3,7 +3,7 @@ import 'package:themedemo66/pages/hello.dart';
 import 'package:themedemo66/pages/login.dart';
 import 'package:themedemo66/pages/mainnews.dart';
 import 'package:themedemo66/pages/news.dart';
-import 'package:themedemo66/pages/newsbody.dart';
+// import 'package:themedemo66/pages/newsbody.dart';
 import 'package:themedemo66/pages/register.dart';
 import 'package:themedemo66/theme.dart';
 
@@ -22,11 +22,11 @@ class MyApp extends StatelessWidget {
       theme: scitTheme(),
       initialRoute: '/hello',
       routes: {
-        '/hello': (context) => Hello(),
-        '/register': (context) => Register(),
-        '/login': (context) => Login(),
-        '/news': (context) => News(),
-        '/mainnews': (context) => MainNews(),
+        '/hello': (context) => const Hello(),
+        '/register': (context) => const Register(),
+        '/login': (context) => const Login(),
+        '/news': (context) => const News(),
+        '/mainnews': (context) => const MainNews(),
       },
     );
   }

@@ -5,12 +5,14 @@ class ListTileMenu extends StatelessWidget {
   final IconData icon;
   final String menuName;
   final String routeName;
+  final Map data;
 
   const ListTileMenu({
     super.key,
     required this.icon,
     required this.menuName,
     required this.routeName,
+    required this.data,
   });
 
   @override
@@ -29,7 +31,7 @@ class ListTileMenu extends StatelessWidget {
             ),
       ),
       onTap: () {
-        Navigator.pushNamed(context, routeName);
+        Navigator.pushNamed(context, routeName, arguments: data);
       },
     );
   }
