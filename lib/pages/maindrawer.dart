@@ -29,13 +29,13 @@ class MainDrawer extends StatelessWidget {
           ListTileMenu(
             icon: Icons.school,
             menuName: 'Cirriculum',
-            routeName: '/register',
+            routeName: '/cirriculum',
             data: data,
           ),
           ListTileMenu(
             icon: Icons.phone,
             menuName: 'Contact',
-            routeName: '/login',
+            routeName: '/contact',
             data: data,
           ),
         ],
